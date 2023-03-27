@@ -56,7 +56,7 @@ const localStorageHandler = () => {
 };
 
 const sessionStorageHandler = () => {
-  sessionStorage.setItem(itemKey, sessionStorageVal.value)
+  sessionStorage.setItem(itemKey, sessionStorageInput.value)
   getStoredValues();
 };
 

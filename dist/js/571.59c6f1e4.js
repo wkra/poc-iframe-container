@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkpoc_iframe_container"]=self["webpackChunkpoc_iframe_container"]||[]).push([[571],{1571:function(n,r,e){e.r(r),e.d(r,{default:function(){return f}});var c=e(3396);function t(n,r){return(0,c.wg)(),(0,c.iD)("div",null,"IFRAME")}var u=e(89);const a={},i=(0,u.Z)(a,[["render",t]]);var f=i}}]);
+//# sourceMappingURL=571.59c6f1e4.js.map

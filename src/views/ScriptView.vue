@@ -1,5 +1,8 @@
 <template>
-  <div>SCRIPT</div>
+  <div>
+    <div>SCRIPT</div>
+    <div id="app"></div>
+  </div>
 </template>
 
 <script setup>
@@ -12,7 +15,7 @@ const addScript = (url) => {
 }
 
 onMounted(async () => {
-  const url = ''
+  const url = 'https://wkra.github.io/poc-iframe-list/js/app.js'
   addScript(url);
 });
 </script>
