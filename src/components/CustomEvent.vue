@@ -5,7 +5,7 @@
   </div>
 </template>
 <script setup>
-import { onMounted, ref } from "vue";
+import { onMounted, onUnmounted, ref } from "vue";
 
 const showCustomEventMessage = ref(false);
 
@@ -20,10 +20,19 @@ const emitHandler = () => {
   console.log("parentevent emited");
 };
 
+const eventHandler = () => {
+  showCustomEventMessage.value = true;
+  console.log("childevent received");
+};
+
 onMounted(() => {
   document.addEventListener("childevent", function () {
     showCustomEventMessage.value = true;
     console.log("childevent received");
   });
+});
+
+onUnmounted(() => {
+  document.removeEventListener("childevent", eventHandler);
 });
 </script>
