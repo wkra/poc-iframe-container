@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button type="button" @click="emitHandler">Emitt event</button>
+    <button type="button" @click="emitHandler">Emit event</button>
     <div v-if="showCustomEventMessage">CUSTOM EVENT FROM CHILD RECIVED</div>
   </div>
 </template>
@@ -17,12 +17,13 @@ const emitHandler = () => {
     composed: false,
   });
   document.dispatchEvent(myEvent);
+  console.log("parentevent emited");
 };
 
 onMounted(() => {
   document.addEventListener("childevent", function () {
     showCustomEventMessage.value = true;
-    console.log("childevent received")
+    console.log("childevent received");
   });
 });
 </script>

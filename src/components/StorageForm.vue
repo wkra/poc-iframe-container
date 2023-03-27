@@ -28,12 +28,13 @@
         <div>sessionStore item: {{ sessionStorageVal }}</div>
       </div>
     </div>
-    <button type="button" @click="emitHandler">Emitt event</button>
+    <CustomEvent />
   </div>
 </template>
 <script setup>
 import { useCookies } from "vue3-cookies";
 import { ref, onMounted } from "vue";
+import CustomEvent from "./CustomEvent.vue";
 
 const { cookies } = useCookies();
 const itemKey = "item";
@@ -65,16 +66,6 @@ const getStoredValues = () => {
   cookieVal.value = cookies.get(itemKey);
   localStorageVal.value = localStorage.getItem(itemKey) || "none";
   sessionStorageVal.value = sessionStorage.getItem(itemKey) || "none";
-};
-
-const emitHandler = () => {
-  const myEvent = new CustomEvent("myevent", {
-    detail: {},
-    bubbles: true,
-    cancelable: true,
-    composed: false,
-  });
-  document.dispatchEvent(myEvent);
 };
 
 onMounted(() => {
