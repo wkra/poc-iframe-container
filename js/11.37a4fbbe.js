@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkpoc_iframe_container"]=self["webpackChunkpoc_iframe_container"]||[]).push([[11],{6011:function(e,r,i){i.r(r),i.d(r,{default:function(){return o}});var a=i(3396),s=i(4870);const t={class:"s-iframe"},n=(0,a._)("div",null,"IFRAME",-1),c=["src"];var f={__name:"IframeView",setup(e){const r="https://wkra.github.io/poc-iframe-list/";return(e,i)=>((0,a.wg)(),(0,a.iD)("div",t,[n,(0,a._)("iframe",{class:"s-iframe__iframe",src:(0,s.SU)(r),width:"100%",height:"800"},null,8,c)]))}};const u=f;var o=u}}]);
+//# sourceMappingURL=11.37a4fbbe.js.map
