@@ -1,2 +1,2 @@
 "use strict";(self["webpackChunkpoc_iframe_container"]=self["webpackChunkpoc_iframe_container"]||[]).push([[451],{451:function(e,n,r){r.r(n),r.d(n,{default:function(){return u}});var t=r(3396);const i=(0,t._)("div",null,"IFRAME",-1);var a={__name:"IframeView",setup(e){const n="https://wkra.github.io/poc-iframe-list/";return(e,r)=>((0,t.wg)(),(0,t.iD)("div",null,[i,(0,t._)("iframe",{src:n,width:"100%"})]))}};const c=a;var u=c}}]);
-//# sourceMappingURL=451.5dbb0bb7.js.map
+//# sourceMappingURL=451.cac9bcbf.js.map
