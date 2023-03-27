@@ -5,6 +5,7 @@
     <router-link to="/script">SCRIPT</router-link>
   </nav>
   <div>
+    <h2>I AM PARENT / CONTAINER</h2>
     <StorageForm />
   </div>
   <router-view />

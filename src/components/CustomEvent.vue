@@ -1,7 +1,8 @@
 <template>
   <div>
-    <button type="button" @click="emitHandler">Emit event</button>
-    <div v-if="showCustomEventMessage">CUSTOM EVENT FROM CHILD RECIVED</div>
+    <hr />
+    <div>Test parent / child comunication</div>
+    <button type="button" @click="emitHandler">Emit event do child</button>
   </div>
 </template>
 <script setup>
@@ -16,20 +17,17 @@ const emitHandler = () => {
     cancelable: true,
     composed: false,
   });
+  console.log("emit parent event");
   document.dispatchEvent(myEvent);
-  console.log("parentevent emited");
 };
 
 const eventHandler = () => {
   showCustomEventMessage.value = true;
-  console.log("childevent received");
+  alert("I am container. Event from child reveived");
 };
 
 onMounted(() => {
-  document.addEventListener("childevent", function () {
-    showCustomEventMessage.value = true;
-    console.log("childevent received");
-  });
+  document.addEventListener("childevent", eventHandler);
 });
 
 onUnmounted(() => {

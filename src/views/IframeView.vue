@@ -1,10 +1,23 @@
 <template>
-  <div>
-  <div>IFRAME</div>
-  <iframe :src="iframeSrc" width="100%"/>
+  <div class="s-iframe">
+    <div>IFRAME</div>
+    <iframe
+      class="s-iframe__iframe"
+      :src="iframeSrc"
+      width="100%"
+      height="800"
+    />
   </div>
 </template>
 
 <script setup>
-const iframeSrc = 'https://wkra.github.io/poc-iframe-list/'
+const iframeSrc = process.env.VUE_APP_IFRAME_SRC;
 </script>
+
+<style lang="scss">
+.s-iframe {
+  &__iframe {
+    border: none;
+  }
+}
+</style>
