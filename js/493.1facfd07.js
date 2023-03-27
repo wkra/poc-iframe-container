@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunkpoc_iframe_container"]=self["webpackChunkpoc_iframe_container"]||[]).push([[493],{4493:function(e,t,n){n.r(t),n.d(t,{default:function(){return i}});var c=n(3396),r={__name:"ScriptView",setup(e){const t=e=>{let t=document.createElement("script");t.setAttribute("src",e),document.head.appendChild(t)};return(0,c.bv)((async()=>{const e="";t(e)})),(e,t)=>((0,c.wg)(),(0,c.iD)("div",null,"SCRIPT"))}};const a=r;var i=a}}]);
-//# sourceMappingURL=493.1facfd07.js.map
