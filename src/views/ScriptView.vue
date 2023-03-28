@@ -19,7 +19,7 @@ const addStyle = (url) => {
   newstyle.setAttribute("rel", "stylesheet");
   newstyle.setAttribute("type", "text/css");
   newstyle.setAttribute("href", url);
-   document.head.appendChild(newstyle);
+  document.head.appendChild(newstyle);
 };
 
 onMounted(async () => {
